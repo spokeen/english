@@ -30,5 +30,12 @@ demonstrates:演示
 standalone:独立的
 modified:修改的
 resides:属于，定居
+specify:指定
+certain:确定的    
+perform:执行
+custom:定制的
+parse：解析
+cycle:循环，周期
+generate:生成
 ```
 
