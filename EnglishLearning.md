@@ -19,5 +19,16 @@ auto-detection:自动检测
 telnet:远程登陆
 introspect:反思
 full-blown:全面的
+compilation:编译
+dedicated:专用的
+respective:各自的
+explicitly:明确地
+resilient:有弹性的
+convert:转换
+passing:经过
+demonstrates:演示
+standalone:独立的
+modified:修改的
+resides:属于，定居
 ```
 
