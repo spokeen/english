@@ -39,3 +39,22 @@ cycle:循环，周期
 generate:生成
 ```
 
+##### 2018-10-30
+
+```
+common:普通的，通常的
+subsequent:随后的
+bound:绑定
+encapsulate:封装
+wrapper:包装
+credential:证书
+mechanism:机制，原理
+accuracy:精确度
+```
+
+##### 2018-10-31
+
+```
+tutorial：教程
+```
+
