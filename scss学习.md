@@ -50,6 +50,21 @@ $name:20px;
 @include firefox-message(".header");
 ```
 
+##### 运算
+
+```
+支持的运算：
+	1.  ==  ， !=
+	2.+, -, *, /,%         (不同单位间自动转化)
+	
+```
+
+##### 插值语句
+
+```
+通过 #{} 插值语句可以在选择器或属性名中使用变量
+```
+
 
 
 ##### 嵌套
@@ -115,14 +130,14 @@ $version:"1.2.3";
 
 a{
     //bu neng you zhong wen,yong unicode bian ma
-    @include font("\5FAE",30px)
+    @include font("\5FAE",30px);
 }
 ```
 
 ##### 扩展
 
 ```
-//此时test23也有test的样式
+//此时test23也有test的样式  ，通过  @extend 继承了.test的样式
 .test{
     font-size: 10px;
     color: red;
@@ -133,7 +148,39 @@ a{
     @extend .test;
     color: black;
 }
+//设置默认值
+@mixin sexy-border($color, $width: 1px) {}
+//关键词参数
+p { @include sexy-border($color: blue); }
+//不明确参数的具体个数，可以如下定义
+@mixin box-shadow($shadows...) {}
+```
 
+##### 指令
+
+```
+#@for循环,范围 [start，end]
+格式：@for $var from <start> through <end>
+案例：	@for $i from 1 through 3 {
+  		.item-#{$i} { width: 2em * $i; }
+	   }
+	   
+#@each 遍历数组
+格式 ： @each $var in <list>
+例子1： @each $animal in puma, sea-slug, egret, salamander {
+        .#{$animal}-icon {
+          background-image: url('/images/#{$animal}.png');
+        }
+      }
+例子2:  @each $animal, $color, $cursor in (puma, black, default),
+                                           (sea-slug, blue, pointer),
+                                           (egret, white, move) {
+           .#{$animal}-icon {
+             background-image: url('/images/#{$animal}.png');
+             border: 2px solid $color;
+             cursor: $cursor;
+           }
+         }         
 ```
 
 ##### 函数
