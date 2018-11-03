@@ -58,3 +58,28 @@ accuracy:精确度
 tutorial：教程
 ```
 
+##### 2018-11-1
+
+```
+merchant：商人
+summarize：总结
+remainder ：剩余的
+Philosophy：哲学，思想
+pillars：栋梁
+tablet ：平板
+disruption :破坏
+nest ：嵌套
+legacy :遗产
+identify：确定，识别
+recharge ：充值
+reuse :重用
+nevertheless :不过
+verify ：核实
+```
+
+##### 2018-11-2
+
+```
+
+```
+
